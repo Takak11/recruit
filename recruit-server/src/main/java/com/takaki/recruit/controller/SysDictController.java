@@ -1,7 +1,15 @@
 package com.takaki.recruit.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.takaki.recruit.common.BasePageReturnType;
+import com.takaki.recruit.constant.RestResponse;
+import com.takaki.recruit.common.TransferPage;
+import com.takaki.recruit.entity.vo.Dictionary;
+import com.takaki.recruit.service.SysDictService;
+import io.swagger.annotations.Api;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -12,7 +20,20 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2022-06-09
  */
 @RestController
-@RequestMapping("/recruit/sys-dict-entity")
+@Api(tags = {"数据字典管理"})
+@RequestMapping("/api/recruit")
 public class SysDictController {
 
+    @Autowired
+    private SysDictService service;
+
+    @PostMapping("/dict")
+    public RestResponse getSysDict(@RequestBody @Validated TransferPage page) {
+
+        BasePageReturnType<Dictionary> result = service.getSysDictionary(page);
+        result.setTotal(result.getTotal());
+        result.setRecords(result.getRecords());
+
+        return RestResponse.success(result);
+    }
 }

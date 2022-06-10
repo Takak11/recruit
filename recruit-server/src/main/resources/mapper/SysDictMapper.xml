@@ -3,25 +3,32 @@
 <mapper namespace="com.takaki.recruit.mapper.SysDictMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.takaki.recruit.entity.po.SysDictEntity">
-        <id column="id" property="id" />
-        <result column="create_time" property="createTime" />
-        <result column="update_time" property="updateTime" />
-        <result column="created_by" property="createdBy" />
-        <result column="updated_by" property="updatedBy" />
-        <result column="title" property="title" />
-        <result column="type" property="type" />
+    <resultMap id="BaseResultMap" type="com.takaki.recruit.entity.vo.Dictionary">
+        <result column="title" property="title"/>
         <result column="desc" property="desc" />
-        <result column="is_deleted" property="deleted" />
+        <collection property="items" ofType="com.takaki.recruit.entity.vo.DictionaryItem">
+            <result property="title" column="itemTitle" javaType="java.lang.String"/>
+            <result property="code" column="itemCode" javaType="java.lang.String"/>
+            <result property="desc" column="itemDesc" javaType="java.lang.String"/>
+        </collection>
     </resultMap>
 
-    <!-- 通用查询结果列 -->
-    <sql id="Base_Column_List">
-        create_time,
-        update_time,
-        created_by,
-        updated_by,
-        id, title, type, desc, is_deleted
-    </sql>
+    <select id="getSysDictionary" resultMap="BaseResultMap">
+        SELECT
+            dict.title as title,
+            dict.type as type,
+            dict.`desc` as `desc`,
+            item.title as itemTitle,
+            item.`code` as `itemCode`,
+            item.`desc` as `itemDesc`
+        FROM
+            t_sys_dict dict
+            LEFT JOIN t_sys_dict_item as item on item.type = dict.type
+        WHERE
+            dict.status = 1 and item.status = 1
+        ORDER BY
+            dict.type,
+            item.sort_order ASC
+    </select>
 
 </mapper>

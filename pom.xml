@@ -39,6 +39,7 @@
         <commons-io.version>2.11.0</commons-io.version>
         <commons-fileupload.version>1.4</commons-fileupload.version>
         <knife4j.version>3.0.3</knife4j.version>
+        <validation.version>2.0.2</validation.version>
     </properties>
 
     <dependencies>
@@ -168,6 +169,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
+        </dependency>
+<!--        参数校验注解-->
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>${validation.version}</version>
         </dependency>
     </dependencies>
 
