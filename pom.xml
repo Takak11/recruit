@@ -8,6 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>recruit-server</module>
+        <module>common</module>
     </modules>
     <name>recruit</name>
     <description>Parent project for recruit system</description>
