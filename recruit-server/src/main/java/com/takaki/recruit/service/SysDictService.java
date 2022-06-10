@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.takaki.recruit.common.BasePageReturnType;
 import com.takaki.recruit.common.TransferPage;
 import com.takaki.recruit.entity.vo.Dictionary;
+import org.springframework.validation.annotation.Validated;
 
 /**
  * <p>
