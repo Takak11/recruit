@@ -134,7 +134,7 @@
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-event:1.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-web:1.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.owasp.encoder:encoder:1.2.2" level="project" />
-    <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: com.auth0:java-jwt:3.19.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.13.2.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.2" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:easyexcel:2.2.7" level="project" />

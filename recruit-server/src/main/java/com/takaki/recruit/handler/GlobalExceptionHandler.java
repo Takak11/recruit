@@ -3,7 +3,6 @@ package com.takaki.recruit.handler;
 import com.takaki.recruit.constant.ResponseStateEnum;
 import com.takaki.recruit.constant.RestResponse;
 import com.takaki.recruit.exception.BusinessBaseException;
-import io.jsonwebtoken.ExpiredJwtException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.core.annotation.Order;
@@ -64,12 +63,12 @@ public class GlobalExceptionHandler {
         );
     }
 
-    @ResponseBody
-    @ResponseStatus(HttpStatus.UNAUTHORIZED)
-    @ExceptionHandler(ExpiredJwtException.class)
-    public RestResponse handleExpiredException(ExpiredJwtException e) {
-        e.printStackTrace();
-        log.error("用户token过期：{}", e.getMessage());
-        return RestResponse.fail(ResponseStateEnum.UNAUTHORIZED);
-    }
+//    @ResponseBody
+//    @ResponseStatus(HttpStatus.UNAUTHORIZED)
+//    @ExceptionHandler(ExpiredJwtException.class)
+//    public RestResponse handleExpiredException(ExpiredJwtException e) {
+//        e.printStackTrace();
+//        log.error("用户token过期：{}", e.getMessage());
+//        return RestResponse.fail(ResponseStateEnum.UNAUTHORIZED);
+//    }
 }

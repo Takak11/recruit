@@ -8,10 +8,11 @@ public interface JwtConstant {
 
     String AUTH_HEADER = "Authorization";
 
-    String SECRET = "defaultSecret";
+    String SECRET = "takaki@87449034";
 
+    String ISSUER = "takaki";
     /**
      * 默认7天过期
      */
-    Long EXPIRATION = 604800L;
+    Long EXPIRATION = 604800000L;
 }

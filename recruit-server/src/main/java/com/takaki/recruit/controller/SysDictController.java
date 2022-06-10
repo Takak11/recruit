@@ -1,6 +1,5 @@
 package com.takaki.recruit.controller;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.takaki.recruit.common.BasePageReturnType;
 import com.takaki.recruit.constant.RestResponse;
 import com.takaki.recruit.common.TransferPage;
