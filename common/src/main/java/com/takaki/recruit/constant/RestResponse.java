@@ -1,6 +1,7 @@
 package com.takaki.recruit.constant;
 
 import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
@@ -10,8 +11,11 @@ import lombok.Data;
 @Data
 @ApiModel("返回值状态规范")
 public class RestResponse {
+    @ApiModelProperty("状态码")
     private Integer code;
+    @ApiModelProperty("状态信息")
     private String message;
+    @ApiModelProperty("数据")
     private Object data;
 
     public void setRestResponseState(ResponseStateEnum state) {
@@ -42,6 +46,13 @@ public class RestResponse {
         RestResponse response = new RestResponse();
         response.setRestResponseState(state);
         response.setData(data);
+
+        return response;
+    }
+    public static RestResponse fail(Integer code, String message) {
+        RestResponse response = new RestResponse();
+        response.setCode(code);
+        response.setMessage(message);
 
         return response;
     }

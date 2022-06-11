@@ -1,5 +1,6 @@
 package com.takaki.recruit.common;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import javax.validation.constraints.Positive;
@@ -10,8 +11,10 @@ import javax.validation.constraints.Positive;
  */
 @Data
 public class TransferPage {
+    @ApiModelProperty("页码")
     @Positive(message = "pageNo必须为正数")
     private Integer pageNo;
+    @ApiModelProperty("页数")
     @Positive(message = "pageSize必须为正数")
     private Integer pageSize;
 

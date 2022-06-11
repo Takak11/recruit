@@ -1,5 +1,6 @@
 package com.takaki.recruit.common;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.util.List;
@@ -10,6 +11,8 @@ import java.util.List;
  */
 @Data
 public class BasePageReturnType<T> {
+    @ApiModelProperty("总数")
     private Long total;
+    @ApiModelProperty("记录")
     private List<T> records;
 }

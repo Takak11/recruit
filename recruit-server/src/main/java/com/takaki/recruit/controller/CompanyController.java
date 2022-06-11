@@ -16,18 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Takaki
  * @since 2022-06-09
  */
-@Api(tags = "公司管理相关接口")
+@Api(tags = "公司管理接口")
 @RestController
 @RequestMapping("/recruit/company-entity")
 public class CompanyController {
 
-    @PostMapping("/test")
-    @ApiOperation(value = "测试1")
-    public void testSwagger(@RequestBody @Validated String test) {
-        System.out.println("111");
-    }
-    @PostMapping("/test2")
-    public void testSwagger2() {
-        System.out.println("222");
-    }
 }

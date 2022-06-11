@@ -13,7 +13,7 @@ import lombok.Setter;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author Takaki
@@ -21,40 +21,40 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-  @TableName("t_sys_user")
+@TableName("t_sys_user")
 @ApiModel(value = "SysUserEntity对象", description = "")
 public class SysUserEntity extends BaseEntity {
 
-      @ApiModelProperty("主键")
-        @TableId(value = "id", type = IdType.AUTO)
-      private Integer id;
+    @ApiModelProperty("主键")
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
 
-      @ApiModelProperty("姓名")
-      @TableField("name")
+    @ApiModelProperty("姓名")
+    @TableField("name")
     private String name;
 
-      @ApiModelProperty("手机号")
-      @TableField("mobile")
+    @ApiModelProperty("手机号")
+    @TableField("mobile")
     private String mobile;
 
-      @ApiModelProperty("头像")
-      @TableField("avatar")
+    @ApiModelProperty("头像")
+    @TableField("avatar")
     private String avatar;
 
-      @ApiModelProperty("密码")
-      @TableField("password")
+    @ApiModelProperty("密码")
+    @TableField("password")
     private String password;
 
-      @ApiModelProperty("邮箱")
-      @TableField("mail")
+    @ApiModelProperty("邮箱")
+    @TableField("mail")
     private String mail;
 
-      @ApiModelProperty("年龄")
-      @TableField("age")
+    @ApiModelProperty("年龄")
+    @TableField("age")
     private Integer age;
 
-      @ApiModelProperty("删除标记，0未删除，1删除")
-      @TableField("is_deleted")
+    @ApiModelProperty("删除标记，0未删除，1删除")
+    @TableField("is_deleted")
     @TableLogic
     private Boolean deleted;
 

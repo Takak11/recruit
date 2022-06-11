@@ -1,5 +1,6 @@
 package com.takaki.recruit.handler;
 
+import com.auth0.jwt.exceptions.TokenExpiredException;
 import com.takaki.recruit.constant.ResponseStateEnum;
 import com.takaki.recruit.constant.RestResponse;
 import com.takaki.recruit.exception.BusinessBaseException;
@@ -25,13 +26,14 @@ import java.util.stream.Collectors;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
+    @Order(-1)
     @ResponseBody
     @ResponseStatus(HttpStatus.ACCEPTED)
     @ExceptionHandler(BusinessBaseException.class)
     public RestResponse handleBaseException(BusinessBaseException e) {
         e.printStackTrace();
         log.error("业务逻辑异常：{}", e.getMessage());
-        return RestResponse.fail(ResponseStateEnum.BUSINESS_LOGIC_ERROR);
+        return RestResponse.fail(e.getCode(), e.getMessage());
     }
 
     @ResponseBody

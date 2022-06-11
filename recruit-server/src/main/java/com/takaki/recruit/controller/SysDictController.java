@@ -6,6 +6,7 @@ import com.takaki.recruit.common.TransferPage;
 import com.takaki.recruit.entity.vo.Dictionary;
 import com.takaki.recruit.service.SysDictService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -27,6 +28,7 @@ public class SysDictController {
     private SysDictService service;
 
     @PostMapping("/dict")
+    @ApiOperation("获取系统字典项")
     public RestResponse getSysDict(@RequestBody @Validated TransferPage page) {
 
         BasePageReturnType<Dictionary> result = service.getSysDictionary(page);
