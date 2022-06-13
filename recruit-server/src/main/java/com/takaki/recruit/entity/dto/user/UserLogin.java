@@ -1,4 +1,4 @@
-package com.takaki.recruit.entity.dto;
+package com.takaki.recruit.entity.dto.user;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

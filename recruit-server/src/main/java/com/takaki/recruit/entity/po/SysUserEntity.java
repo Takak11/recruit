@@ -29,6 +29,10 @@ public class SysUserEntity extends BaseEntity {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
+    @ApiModelProperty("用户名")
+    @TableField("username")
+    private String username;
+
     @ApiModelProperty("姓名")
     @TableField("name")
     private String name;
@@ -52,6 +56,10 @@ public class SysUserEntity extends BaseEntity {
     @ApiModelProperty("年龄")
     @TableField("age")
     private Integer age;
+
+    @ApiModelProperty("性别")
+    @TableField("sex")
+    private Integer sex;
 
     @ApiModelProperty("删除标记，0未删除，1删除")
     @TableField("is_deleted")

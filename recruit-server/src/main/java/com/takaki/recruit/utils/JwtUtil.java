@@ -5,10 +5,9 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.takaki.recruit.constant.JwtConstant;
 import com.takaki.recruit.constant.ResponseStateEnum;
-import com.takaki.recruit.entity.dto.UserLogin;
+import com.takaki.recruit.entity.dto.user.UserLogin;
 import com.takaki.recruit.exception.BusinessBaseException;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.shiro.SecurityUtils;
 import org.springframework.util.StringUtils;
 
 import java.util.Date;
@@ -30,7 +29,10 @@ public class JwtUtil {
         if (isValidToken) {
             return StringUtils.delete(rawToken, JwtConstant.TOKEN_PREFIX);
         } else {
-            throw new BusinessBaseException(ResponseStateEnum.ILLEGAL_ARGUMENT.getCode(), "Token格式有误");
+            throw new BusinessBaseException(
+                    ResponseStateEnum.UNAUTHORIZED.getCode(),
+                    ResponseStateEnum.UNAUTHORIZED.getMessage()
+            );
 
         }
     }
@@ -91,8 +93,5 @@ public class JwtUtil {
     public static Date getExpiredDate(String token) {
         return JWT.decode(token)
                 .getExpiresAt();
-    }
-
-    public static void disableSysToken() {
     }
 }

@@ -1,0 +1,988 @@
+[2022-06-12 00:12:32] [DEBUG] [org.apache.ibatis.logging.LogFactory:105]-- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2022-06-12 00:26:51] [DEBUG] [org.apache.ibatis.logging.LogFactory:105]-- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2022-06-12 00:27:05] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 00:27:05] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: admin(String)
+[2022-06-12 00:27:05] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 0
+[2022-06-12 00:32:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 00:32:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 00:32:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 00:32:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 00:32:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 00:32:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 00:33:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 00:33:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 00:33:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 08:59:03] [DEBUG] [org.apache.ibatis.logging.LogFactory:105]-- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2022-06-12 08:59:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 08:59:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 08:59:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 08:59:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 08:59:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 08:59:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 08:59:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 08:59:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 08:59:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 08:59:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 08:59:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 08:59:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 10:34:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 10:34:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 10:34:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 10:34:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 10:34:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 10:34:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 10:40:52] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 10:40:52] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 10:40:52] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 10:45:09] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 10:45:09] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 10:45:09] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 10:49:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 10:49:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 10:49:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 10:49:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 10:49:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 10:49:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 10:49:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 10:49:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 10:49:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 10:51:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 10:51:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 10:51:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 10:52:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 10:52:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 10:52:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 10:54:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 10:54:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 10:54:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:04:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:04:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:04:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:04:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:04:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: vben(String)
+[2022-06-12 11:04:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 0
+[2022-06-12 11:05:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:05:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:05:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:06:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:06:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:06:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:09:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:09:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:09:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:12:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:12:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:12:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:13:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:13:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:13:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:14:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:14:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:14:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:15:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:15:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:15:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:15:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:15:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:15:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:18:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:18:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:18:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:21:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:21:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:21:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:21:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:21:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:21:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:22:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:22:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:22:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:24:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:24:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:24:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:26:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:26:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:26:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:26:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:26:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:26:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:28:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:28:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:28:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:28:58] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:28:58] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:28:58] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:29:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:29:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:29:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:30:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:30:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:30:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:30:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:30:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:30:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:31:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:31:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:31:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:31:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:31:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:31:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:34:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:34:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:34:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:34:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:34:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:34:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:37:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:37:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:37:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:37:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:37:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:37:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:37:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:37:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 11:37:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:37:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 11:37:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 11:37:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:11] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:11] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:11] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:11] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:11] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:11] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:25:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:25:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:25:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:26:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:26:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:26:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:26:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:26:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:26:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:27:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:27:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:27:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:27:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:27:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:27:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:27:45] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:27:45] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:27:45] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:28:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:28:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:28:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:29:52] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:29:52] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:29:52] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:29:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:29:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:29:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:30:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:30:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:30:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:30:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:30:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:30:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:31:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:31:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:31:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:31:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:31:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:31:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:32:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:32:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:32:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:32:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:32:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:32:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:32:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:32:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:32:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:32:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:32:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:32:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:37:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:37:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:37:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:37:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:37:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:37:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:38:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:38:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:38:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:38:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:38:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:38:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:41:46] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:41:46] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:41:46] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:41:46] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:41:46] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:41:46] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:42:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:42:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:42:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:42:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:42:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:42:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:42:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:42:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:42:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:42:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:42:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:42:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:42:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:42:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:42:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:42:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:42:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:42:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:43:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:43:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:43:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:43:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:43:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:43:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:44:01] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:44:01] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:44:01] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:44:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:44:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:44:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:44:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:44:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:44:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:44:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:44:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:44:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:44:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:44:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:44:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:45:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:45:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:45:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:45:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:45:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:45:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:45:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:45:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:45:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:46:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:46:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:46:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:46:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:46:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:46:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:47:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:47:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:47:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:48:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:48:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:48:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:48:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:48:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:48:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 12:48:48] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 12:48:48] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 12:48:48] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:19:40] [DEBUG] [org.apache.ibatis.logging.LogFactory:105]-- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2022-06-12 13:19:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:19:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:19:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:19:59] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:19:59] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:19:59] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:20:00] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:20:00] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:20:00] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:20:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:20:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:20:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:21:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:21:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:21:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:21:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:21:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:21:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:21:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:21:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:21:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:28:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:28:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:28:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:28:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:28:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:28:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:30:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:30:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:30:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:30:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:30:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:30:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:39:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:39:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:39:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:39:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:39:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:39:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:39:17] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:39:17] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 13:39:17] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:39:17] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 13:39:17] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 13:39:17] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:03:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:03:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:03:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:03:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:03:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:03:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:03:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:03:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:03:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:04:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:04:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:04:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:04:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:04:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:04:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:05:15] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:05:15] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:05:15] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:05:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:05:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:05:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:05:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:05:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:05:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:06:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:06:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:06:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:08:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:08:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:08:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:11:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:11:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:11:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:11:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:11:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:11:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:12:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 14:12:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:12:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 14:17:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:17:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:17:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:17:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 14:17:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:17:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 14:18:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:18:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:18:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:18:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 14:18:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:18:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 14:29:33] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:29:33] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:29:33] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:29:33] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 14:29:33] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:29:33] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 14:35:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 14:35:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:35:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 14:36:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 14:36:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:36:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 14:41:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 14:41:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:41:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 14:48:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 14:48:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:48:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 14:48:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 14:48:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:48:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 14:49:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 14:49:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:49:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 14:49:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 14:49:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:49:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 14:55:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 14:55:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:55:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 14:59:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 14:59:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 14:59:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:00:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:00:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:00:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:00:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:00:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:00:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:00:19] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:00:19] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:00:19] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:00:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:00:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:00:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:00:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:00:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:00:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:00:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:00:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:00:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:02:11] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:02:11] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:02:11] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:02:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:02:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:02:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:02:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:02:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:02:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:02:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:02:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:02:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:06:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:06:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:06:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:06:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:06:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:06:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:10:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:10:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:10:03] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:10:32] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:10:32] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:10:32] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:12:18] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:12:18] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:12:18] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:16:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:16:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:16:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:19:00] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:19:00] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:19:00] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:19:09] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:19:09] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:19:09] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:19:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:19:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:19:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:19:17] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:19:17] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:19:17] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:19:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:19:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:19:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:19:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:19:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:19:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:20:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:20:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:20:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:20:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:20:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:20:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:20:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:20:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:20:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:23:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:23:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:23:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:24:58] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:24:58] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:24:58] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:25:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:25:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:25:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:29:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:29:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:29:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:34:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:34:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:34:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:34:59] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:34:59] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:34:59] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:35:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:35:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:35:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:36:09] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:36:09] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:36:09] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:39:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:39:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:39:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:40:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:40:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:40:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:40:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:40:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:40:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:41:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:41:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:41:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:41:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:41:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:41:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:49:16] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:49:16] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:49:16] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:50:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 15:50:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:50:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 15:50:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:50:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:50:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:51:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:51:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:51:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 15:59:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 15:59:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 15:59:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:04:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:04:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:04:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:08:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:08:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:08:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:09:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:09:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:09:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:09:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:09:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:09:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:09:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:09:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:09:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:10:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:10:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:10:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:10:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:10:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:10:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:11:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 16:11:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:11:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 16:11:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:11:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:11:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:11:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:11:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:11:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:13:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:13:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:13:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:13:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:13:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:13:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:15:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:15:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:15:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:16:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:16:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:16:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:16:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:16:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:16:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:16:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:16:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:16:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:16:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:16:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:16:49] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:17:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:17:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:17:02] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:17:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:17:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:17:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:19:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:19:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:19:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:24:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:24:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:24:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:25:01] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:25:01] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:25:01] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:25:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:25:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:25:38] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:28:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:28:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:28:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:28:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:28:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:28:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:29:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:29:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:29:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:29:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:29:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:29:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:36:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:36:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:36:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:36:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:36:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:36:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:37:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:37:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:37:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:37:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:37:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:37:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:38:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:38:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:38:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:38:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:38:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:38:21] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:38:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:38:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:38:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:38:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:38:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:38:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:38:48] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:38:48] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:38:48] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:39:19] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:39:19] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:39:19] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:46:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:46:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:46:06] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:46:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 16:46:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:46:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 16:46:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 16:46:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:46:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 16:46:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 16:46:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:46:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 16:46:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:46:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:46:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:49:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:49:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:49:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:49:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:49:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:49:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:51:18] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:51:18] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:51:18] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:53:11] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:53:11] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:53:11] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:54:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:54:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:54:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:55:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:55:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:55:08] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:56:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:56:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:56:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:57:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:57:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:57:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:58:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:58:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:58:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:58:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:58:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:58:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 16:59:59] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 16:59:59] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 16:59:59] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:04:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:04:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:04:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:10:17] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:10:17] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:10:17] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:14:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:14:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:14:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:14:46] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:14:46] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:14:46] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:18:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:18:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:18:36] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:20:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:20:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:20:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:20:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:20:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:20:30] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:22:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:22:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:22:20] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:22:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:22:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:22:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:22:46] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:22:46] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:22:46] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:22:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:22:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:22:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:23:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:23:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:23:31] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:37:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:37:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:37:26] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:37:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:37:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:37:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:38:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:38:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:38:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:38:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:38:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:38:47] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:38:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:38:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:38:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:39:15] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:39:15] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:39:15] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:39:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:39:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:39:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:39:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:39:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:39:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:40:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:40:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:40:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 17:40:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 17:40:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 17:40:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:33:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 20:33:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:33:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 20:33:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 20:33:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:33:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 20:33:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:33:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:33:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:34:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 20:34:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:34:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 20:34:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:34:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:34:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:35:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:35:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:35:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:35:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:35:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:35:44] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:35:45] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:35:45] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:35:45] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:37:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:37:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:37:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:41:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:41:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:41:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:41:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:41:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:41:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:41:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:41:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:41:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:41:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:41:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:41:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:42:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:42:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:42:25] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:42:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:42:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:42:27] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:42:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:42:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:42:40] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:42:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:42:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:42:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:42:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:42:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:42:51] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:46:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:46:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:46:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:46:45] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:46:45] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:46:45] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:46:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:46:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:46:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:47:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:47:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:47:13] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:47:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:47:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:47:22] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:52:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:52:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:52:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:57:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:57:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:57:56] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 20:58:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 20:58:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 20:58:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:01:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:01:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:01:54] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:08:09] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:08:09] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:08:09] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:08:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:08:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:08:41] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:08:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:08:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:08:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:08:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:08:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:08:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:08:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:08:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:08:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:08:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:08:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:08:43] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:09:19] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:09:19] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:09:19] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:10:32] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:10:32] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:10:32] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:11:19] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:11:19] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:11:19] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:11:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:11:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:11:55] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:24:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:24:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:24:35] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:34:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:34:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:34:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:34:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:34:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:34:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:48:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:48:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:48:57] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:50:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:50:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:50:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:50:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:50:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:50:12] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 21:50:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 21:50:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 21:50:39] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 22:09:00] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 22:09:00] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 22:09:00] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 22:12:32] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 22:12:32] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 22:12:32] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 22:13:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 22:13:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 22:13:14] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 22:13:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 22:13:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 22:13:23] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 22:13:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 22:13:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 22:13:28] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 22:15:59] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 22:15:59] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 22:15:59] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 22:16:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 22:16:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 22:16:29] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 22:16:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 22:16:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 22:16:37] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 22:17:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 22:17:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 22:17:42] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 23:53:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 23:53:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 23:53:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 23:53:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE is_deleted=0 AND (mail = ?)
+[2022-06-12 23:53:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 23:53:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectOne:137]-- <==      Total: 1
+[2022-06-12 23:53:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 23:53:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 23:53:34] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 23:55:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 23:55:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 23:55:04] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 23:55:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 23:55:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 23:55:10] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1
+[2022-06-12 23:59:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==>  Preparing: SELECT id,name,mobile,avatar,password,mail,age,sex,is_deleted AS deleted,create_time,update_time,created_by,created_by AS updatedBy FROM t_sys_user WHERE mail = ? AND is_deleted=0
+[2022-06-12 23:59:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- ==> Parameters: 87449034@qq.com(String)
+[2022-06-12 23:59:24] [DEBUG] [com.takaki.recruit.mapper.SysUserMapper.selectByMap:137]-- <==      Total: 1

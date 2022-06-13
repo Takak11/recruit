@@ -16,6 +16,6 @@ public interface JwtConstant {
     /**
      * 默认7天过期
      */
-//    Long EXPIRATION = 604800000L;
-    Long EXPIRATION = 10 * 1000L;
+    Long EXPIRATION = 604800000L;
+//    Long EXPIRATION = 10 * 1000L;
 }

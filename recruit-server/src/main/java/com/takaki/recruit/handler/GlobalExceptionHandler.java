@@ -1,6 +1,5 @@
 package com.takaki.recruit.handler;
 
-import com.auth0.jwt.exceptions.TokenExpiredException;
 import com.takaki.recruit.constant.ResponseStateEnum;
 import com.takaki.recruit.constant.RestResponse;
 import com.takaki.recruit.exception.BusinessBaseException;

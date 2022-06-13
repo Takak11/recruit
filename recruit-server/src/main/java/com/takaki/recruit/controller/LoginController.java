@@ -2,7 +2,7 @@ package com.takaki.recruit.controller;
 
 import cn.hutool.core.map.MapUtil;
 import com.takaki.recruit.constant.RestResponse;
-import com.takaki.recruit.entity.dto.UserLogin;
+import com.takaki.recruit.entity.dto.user.UserLogin;
 import com.takaki.recruit.exception.BusinessBaseException;
 import com.takaki.recruit.service.LoginService;
 import io.swagger.annotations.Api;
@@ -32,12 +32,5 @@ public class LoginController {
         String token = loginService.userLogin(user);
 
         return RestResponse.success(MapUtil.of("token", token));
-    }
-
-    @PostMapping("/token/expired")
-    @ApiOperation("获取当前用户token过期时间")
-    public RestResponse getExpiredDate() {
-
-        return RestResponse.success(MapUtil.of("expiredDate", loginService.getExpiredDate()));
     }
 }

@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/api/recruit/global")
 public class GlobalController {
 
-    @ApiOperation(value = "用于接收Filter抛出的异常")
+    @ApiOperation(value = "用于接收Filter抛出的异常(禁主动调用)")
     @RequestMapping("/error")
     public void errorThrow(HttpServletRequest request) throws Exception {
         throw ((Exception) request.getAttribute("filter.e"));

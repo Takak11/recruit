@@ -1,7 +1,12 @@
 package com.takaki.recruit.service;
 
+import com.takaki.recruit.entity.dto.user.UserPassword;
+import com.takaki.recruit.entity.dto.user.UserRegister;
+import com.takaki.recruit.entity.dto.user.UserTransfer;
 import com.takaki.recruit.entity.po.SysUserEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.takaki.recruit.entity.vo.UserInfo;
+import com.takaki.recruit.exception.BusinessBaseException;
 
 /**
  * <p>
@@ -13,4 +18,39 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface SysUserService extends IService<SysUserEntity> {
 
+    /**
+     * 获取环境中的Token并获取其用户名，根据用户名查询用户获取信息
+     * @return 用户信息
+     * @throws BusinessBaseException 用户信息不存在时或多于一个候选者
+     */
+    UserInfo getUserInfo() throws BusinessBaseException;
+
+    /**
+     * 获取token过期时间
+     * @return token过期日期
+     */
+    String getExpiredDate();
+
+    /**
+     * 修改密码
+     * @param userPassword
+     * @return
+     * @throws BusinessBaseException
+     */
+    boolean renewPassword(UserPassword userPassword) throws BusinessBaseException;
+
+
+    /**
+     * 更新用户信息
+     * @param userInfo
+     * @throws BusinessBaseException
+     */
+    void updateUserInfo(UserTransfer userInfo) throws BusinessBaseException;
+
+    /**
+     * 用户注册方法，成功时返回获得的账号
+     * @param info
+     * @return
+     */
+    String register(UserRegister info);
 }

@@ -1,0 +1,58 @@
+2022-06-12 00:27:05.652 [http-nio-8088-exec-2] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：用户名或密码错误
+2022-06-12 00:32:28.996 [http-nio-8088-exec-7] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：未登录/授权的操作
+2022-06-12 00:32:55.716 [http-nio-8088-exec-2] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：未登录/授权的操作
+2022-06-12 00:33:43.399 [http-nio-8088-exec-7] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：未登录/授权的操作
+2022-06-12 08:59:24.459 [http-nio-8088-exec-9] ERROR
+                c.t.r.u.JwtUtil-The Token has expired on Sat Jun 11 17:32:05 CST 2022.
+2022-06-12 08:59:24.470 [http-nio-8088-exec-9] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：登陆状态失效，请重新登录
+2022-06-12 08:59:35.390 [http-nio-8088-exec-8] ERROR
+                c.t.r.u.JwtUtil-The Token has expired on Sat Jun 11 15:54:34 CST 2022.
+2022-06-12 08:59:35.392 [http-nio-8088-exec-8] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：登陆状态失效，请重新登录
+2022-06-12 11:04:57.160 [http-nio-8088-exec-5] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：用户名或密码错误
+2022-06-12 12:45:34.476 [http-nio-8088-exec-2] ERROR
+                c.t.r.u.JwtUtil-The token was expected to have 3 parts, but got 1.
+2022-06-12 12:45:34.495 [http-nio-8088-exec-2] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：登陆状态失效，请重新登录
+2022-06-12 12:45:42.460 [http-nio-8088-exec-4] ERROR
+                c.t.r.u.JwtUtil-The token was expected to have 3 parts, but got 1.
+2022-06-12 12:45:42.464 [http-nio-8088-exec-4] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：登陆状态失效，请重新登录
+2022-06-12 12:45:44.200 [http-nio-8088-exec-6] ERROR
+                c.t.r.u.JwtUtil-The token was expected to have 3 parts, but got 1.
+2022-06-12 12:45:44.202 [http-nio-8088-exec-6] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：登陆状态失效，请重新登录
+2022-06-12 12:46:40.444 [http-nio-8088-exec-7] ERROR
+                c.t.r.u.JwtUtil-The token was expected to have 3 parts, but got 1.
+2022-06-12 12:46:40.446 [http-nio-8088-exec-7] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：登陆状态失效，请重新登录
+2022-06-12 12:46:42.208 [http-nio-8088-exec-10] ERROR
+                c.t.r.u.JwtUtil-The token was expected to have 3 parts, but got 1.
+2022-06-12 12:46:42.209 [http-nio-8088-exec-10] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：登陆状态失效，请重新登录
+2022-06-12 14:05:54.725 [http-nio-8088-exec-5] ERROR
+                c.t.r.u.JwtUtil-The input is not a valid base 64 encoded string.
+2022-06-12 14:05:54.769 [http-nio-8088-exec-5] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：登陆状态失效，请重新登录
+2022-06-12 14:06:37.282 [http-nio-8088-exec-7] ERROR
+                c.t.r.u.JwtUtil-The input is not a valid base 64 encoded string.
+2022-06-12 14:06:37.285 [http-nio-8088-exec-7] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：登陆状态失效，请重新登录
+2022-06-12 14:08:26.015 [http-nio-8088-exec-9] ERROR
+                c.t.r.u.JwtUtil-The input is not a valid base 64 encoded string.
+2022-06-12 14:08:26.018 [http-nio-8088-exec-9] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：登陆状态失效，请重新登录
+2022-06-12 14:09:42.433 [http-nio-8088-exec-10] ERROR
+                c.t.r.u.JwtUtil-The input is not a valid base 64 encoded string.
+2022-06-12 14:09:42.434 [http-nio-8088-exec-10] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：登陆状态失效，请重新登录
+2022-06-12 14:09:42.519 [http-nio-8088-exec-1] ERROR
+                c.t.r.u.JwtUtil-The input is not a valid base 64 encoded string.
+2022-06-12 14:09:42.529 [http-nio-8088-exec-1] ERROR
+                c.t.r.h.GlobalExceptionHandler-业务逻辑异常：登陆状态失效，请重新登录

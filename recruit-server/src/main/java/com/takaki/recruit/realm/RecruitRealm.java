@@ -2,25 +2,21 @@ package com.takaki.recruit.realm;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.takaki.recruit.common.JwtToken;
-import com.takaki.recruit.constant.ResponseStateEnum;
 import com.takaki.recruit.entity.po.SysUserEntity;
-import com.takaki.recruit.exception.BusinessBaseException;
 import com.takaki.recruit.service.SysUserService;
 import com.takaki.recruit.utils.JwtUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authc.*;
-import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthenticatingRealm;
-import org.apache.shiro.realm.AuthorizingRealm;
-import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
 
 
 /**
  * @author Takaki
  * @date 2022/6/11
  */
+@Slf4j
 @Component("recruitRealm")
 public class RecruitRealm extends AuthenticatingRealm {
 
@@ -42,15 +38,14 @@ public class RecruitRealm extends AuthenticatingRealm {
 
         String username = JwtUtil.getUsernameFromToken(token);
 
-        userService.getOne(new QueryWrapper<SysUserEntity>().eq("mail", username));
         SysUserEntity userEntity = userService.getOne(
                 new QueryWrapper<SysUserEntity>()
-                        .eq("mail", username)
+                        .eq("username", username)
         );
         if (userEntity == null) {
             return null;
         }
-
+        log.info("{} ==> 查询用户", this.getClass());
         return new SimpleAuthenticationInfo(token, token, "recruitRealm");
     }
 }
