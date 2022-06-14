@@ -54,6 +54,7 @@ public class ShiroConfig {
         rules.put("/v2/**", "anon");
         rules.put("/swagger-ui.html/**", "anon");
         rules.put("/doc.html/**", "anon");
+        rules.put("/api/recruit/common/rest/download/**", "anon");
 
         rules.put("/**", "loginFilter");
 

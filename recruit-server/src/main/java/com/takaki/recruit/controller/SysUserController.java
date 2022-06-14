@@ -82,8 +82,10 @@ public class SysUserController {
 
         String path = userService.updateUserAvatar(file);
 
+
+
         return null == path
                 ? RestResponse.fail(ResponseStateConstant.ERROR_CODE, "上传头像失败")
-                : RestResponse.success(path);
+                : RestResponse.success(MapUtil.of("src", path));
     }
 }
