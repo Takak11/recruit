@@ -1,4 +1,0 @@
-2022-06-12 00:12:32.865 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory.setImplementation - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-2022-06-12 00:26:51.002 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory.setImplementation - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-2022-06-12 08:59:03.530 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory.setImplementation - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-2022-06-12 13:19:40.715 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory.setImplementation - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
