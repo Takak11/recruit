@@ -8,6 +8,9 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../../mvnRep/repository/cn/hutool/hutool-all/5.7.22/hutool-all-5.7.22-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../mvnRep/repository/cn/hutool/hutool-all/5.7.22/hutool-all-5.7.22.jar!/cn/hutool/core/bean" />
+      <root url="jar://$PROJECT_DIR$/../../mvnRep/repository/cn/hutool/hutool-all/5.7.22/hutool-all-5.7.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../mvnRep/repository/cn/hutool/hutool-all/5.7.22/hutool-all-5.7.22.jar!/cn/hutool/core/bean" />
     </SOURCES>
   </library>
 </component>

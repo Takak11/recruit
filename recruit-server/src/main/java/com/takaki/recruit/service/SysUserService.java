@@ -7,6 +7,9 @@ import com.takaki.recruit.entity.po.SysUserEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.takaki.recruit.entity.vo.UserInfo;
 import com.takaki.recruit.exception.BusinessBaseException;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
 
 /**
  * <p>
@@ -53,4 +56,6 @@ public interface SysUserService extends IService<SysUserEntity> {
      * @return
      */
     String register(UserRegister info);
+
+    String updateUserAvatar(MultipartFile file) throws IOException, BusinessBaseException;
 }

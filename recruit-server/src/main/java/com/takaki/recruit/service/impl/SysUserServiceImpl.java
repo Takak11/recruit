@@ -3,6 +3,7 @@ package com.takaki.recruit.service.impl;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
 import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.lang.Assert;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.crypto.digest.BCrypt;
@@ -11,18 +12,23 @@ import com.takaki.recruit.constant.ResponseStateEnum;
 import com.takaki.recruit.entity.dto.user.UserPassword;
 import com.takaki.recruit.entity.dto.user.UserRegister;
 import com.takaki.recruit.entity.dto.user.UserTransfer;
+import com.takaki.recruit.entity.po.SysResourceEntity;
 import com.takaki.recruit.entity.po.SysUserEntity;
 import com.takaki.recruit.entity.vo.UserInfo;
 import com.takaki.recruit.exception.BusinessBaseException;
 import com.takaki.recruit.mapper.SysUserMapper;
+import com.takaki.recruit.service.SysResourceService;
 import com.takaki.recruit.service.SysUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.takaki.recruit.utils.JwtUtil;
+import com.takaki.recruit.utils.MyBeanUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
@@ -40,6 +46,8 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
 
     @Autowired
     private SysUserMapper userMapper;
+    @Autowired
+    private SysResourceService resourceService;
 
     private SysUserEntity getUserEntity() throws BusinessBaseException {
 
@@ -101,24 +109,18 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
 
     @Override
     public void updateUserInfo(UserTransfer userInfo) throws BusinessBaseException {
-        String token = SecurityUtils.getSubject().getPrincipal().toString();
-        if (null == token) {
-            throw new BusinessBaseException(ResponseStateConstant.ERROR_CODE, "请重新登录后重试");
-        }
 
-        String username = JwtUtil.getUsernameFromToken(token);
-        List<SysUserEntity> user = userMapper.selectByMap(MapUtil.of("username", username));
-        if (user.size() != 1) {
-            throw new BusinessBaseException(ResponseStateConstant.ERROR_CODE, "用户状态错误");
-        }
-
-        SysUserEntity userEntity = user.get(0);
+        SysUserEntity userEntity = this.getUserEntity();
 
         BeanUtil.copyProperties(
                 userInfo,
                 userEntity,
                 CopyOptions.create().ignoreNullValue()
         );
+
+        if (MyBeanUtil.isCommonFieldsValueEqual(userInfo, userEntity)) {
+            return;
+        }
         userMapper.updateById(userEntity);
     }
 
@@ -140,6 +142,26 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
 
         userMapper.insert(userEntity);
         return username;
+    }
+
+    @Override
+    public String updateUserAvatar(MultipartFile file) throws IOException, BusinessBaseException {
+
+        Integer id = resourceService.fileUpload(file);
+        SysUserEntity userEntity = null;
+
+        if (null != id) {
+
+            userEntity = this.getUserEntity();
+            userEntity.setAvatar(id);
+
+            userMapper.updateById(userEntity);
+            SysResourceEntity resource = resourceService.getById(id);
+
+            return resource.getPath();
+        }
+
+        return null;
     }
 
 

@@ -13,7 +13,7 @@ import lombok.Setter;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author Takaki
@@ -21,28 +21,28 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-  @TableName("t_sys_resource")
-@ApiModel(value = "SysResourceEntity对象", description = "")
+@TableName("t_sys_resource")
+@ApiModel(value = "文件资源对象", description = "")
 public class SysResourceEntity extends BaseEntity {
 
-      @ApiModelProperty("主键")
-        @TableId(value = "id", type = IdType.AUTO)
-      private Integer id;
+    @ApiModelProperty("主键")
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
 
-      @ApiModelProperty("文件路径")
-      @TableField("path")
+    @ApiModelProperty("文件路径")
+    @TableField("path")
     private String path;
 
-      @ApiModelProperty("文件类型")
-      @TableField("type_code")
+    @ApiModelProperty("文件类型")
+    @TableField("type_code")
     private String typeCode;
 
-      @ApiModelProperty("文件名")
-      @TableField("file_name")
+    @ApiModelProperty("文件名")
+    @TableField("file_name")
     private String fileName;
 
-      @ApiModelProperty("删除标志，0未删除，1删除")
-      @TableField("is_deleted")
+    @ApiModelProperty("删除标志，0未删除，1删除")
+    @TableField("is_deleted")
     @TableLogic
     private Boolean deleted;
 

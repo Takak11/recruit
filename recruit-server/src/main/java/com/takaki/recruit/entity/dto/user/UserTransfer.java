@@ -1,6 +1,7 @@
 package com.takaki.recruit.entity.dto.user;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -10,6 +11,7 @@ import javax.validation.constraints.NotNull;
  * @date 2022/6/13
  */
 @Data
+@EqualsAndHashCode
 public class UserTransfer {
     @NotBlank(message = "姓名为空")
     private String name;

@@ -8,6 +8,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import com.takaki.recruit.entity.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,6 +23,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @TableName("t_sys_user")
+@EqualsAndHashCode(callSuper = true)
 @ApiModel(value = "SysUserEntity对象", description = "")
 public class SysUserEntity extends BaseEntity {
 
@@ -43,7 +45,7 @@ public class SysUserEntity extends BaseEntity {
 
     @ApiModelProperty("头像")
     @TableField("avatar")
-    private String avatar;
+    private Integer avatar;
 
     @ApiModelProperty("密码")
     @TableField("password")

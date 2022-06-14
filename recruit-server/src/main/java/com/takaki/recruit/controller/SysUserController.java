@@ -14,10 +14,10 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
 
 /**
  * <p>
@@ -74,5 +74,16 @@ public class SysUserController {
 
         userService.updateUserInfo(userTransfer);
         return RestResponse.success();
+    }
+
+    @ApiOperation("上传用户头像")
+    @PostMapping("/avatar")
+    public RestResponse uploadAvatar(@RequestParam("avatar") MultipartFile file) throws IOException, BusinessBaseException {
+
+        String path = userService.updateUserAvatar(file);
+
+        return null == path
+                ? RestResponse.fail(ResponseStateConstant.ERROR_CODE, "上传头像失败")
+                : RestResponse.success(path);
     }
 }
