@@ -72,17 +72,14 @@ public class SysUserController {
     @PostMapping("/update")
     public RestResponse updateUserInfo(@RequestBody @Validated UserTransfer userTransfer) throws BusinessBaseException {
 
-        userService.updateUserInfo(userTransfer);
-        return RestResponse.success();
+        return RestResponse.success(userService.updateUserInfo(userTransfer));
     }
 
     @ApiOperation("上传用户头像")
     @PostMapping("/avatar")
-    public RestResponse uploadAvatar(@RequestParam("avatar") MultipartFile file) throws IOException, BusinessBaseException {
+    public RestResponse uploadAvatar(@RequestParam("file") MultipartFile file) throws IOException, BusinessBaseException {
 
         String path = userService.updateUserAvatar(file);
-
-
 
         return null == path
                 ? RestResponse.fail(ResponseStateConstant.ERROR_CODE, "上传头像失败")

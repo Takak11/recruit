@@ -44,6 +44,11 @@
 
     <dependencies>
 
+<!--        JAVAMAIL邮件-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
 <!--        SpringMVC设置-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

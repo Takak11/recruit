@@ -46,9 +46,10 @@ public interface SysUserService extends IService<SysUserEntity> {
     /**
      * 更新用户信息
      * @param userInfo
+     * @return 结果
      * @throws BusinessBaseException
      */
-    void updateUserInfo(UserTransfer userInfo) throws BusinessBaseException;
+    boolean updateUserInfo(UserTransfer userInfo) throws BusinessBaseException;
 
     /**
      * 用户注册方法，成功时返回获得的账号
@@ -57,5 +58,12 @@ public interface SysUserService extends IService<SysUserEntity> {
      */
     String register(UserRegister info);
 
+    /**
+     * 上传用户头像
+     * @param file 上传来的文件
+     * @return 头像保存的路径
+     * @throws IOException 文件创建错误
+     * @throws BusinessBaseException 无此用户
+     */
     String updateUserAvatar(MultipartFile file) throws IOException, BusinessBaseException;
 }

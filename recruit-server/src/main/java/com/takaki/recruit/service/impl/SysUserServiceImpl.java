@@ -108,20 +108,23 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
     }
 
     @Override
-    public void updateUserInfo(UserTransfer userInfo) throws BusinessBaseException {
+    public boolean updateUserInfo(UserTransfer userInfo) throws BusinessBaseException {
 
+        log.info("调用updateUserInfoApi");
         SysUserEntity userEntity = this.getUserEntity();
+        log.info("dto信息{}", userInfo);
+        if (MyBeanUtil.isCommonFieldsValueEqual(userInfo, userEntity)) {
+            return false;
+        }
 
         BeanUtil.copyProperties(
                 userInfo,
                 userEntity,
                 CopyOptions.create().ignoreNullValue()
         );
-
-        if (MyBeanUtil.isCommonFieldsValueEqual(userInfo, userEntity)) {
-            return;
-        }
         userMapper.updateById(userEntity);
+
+        return true;
     }
 
     @Override

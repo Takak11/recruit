@@ -7,6 +7,8 @@ import com.takaki.recruit.exception.BusinessBaseException;
 import com.takaki.recruit.service.LoginService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2022/6/11
  */
 @Api(tags = "登录管理接口")
+@Slf4j
 @RestController
 @RequestMapping("/api/recruit")
 public class LoginController {
@@ -32,5 +35,12 @@ public class LoginController {
         String token = loginService.userLogin(user);
 
         return RestResponse.success(MapUtil.of("token", token));
+    }
+
+    @PostMapping("/logout")
+    @ApiOperation("从服务端注销账号")
+    public void logout() {
+        log.info("调用注销接口");
+        SecurityUtils.getSubject().logout();
     }
 }

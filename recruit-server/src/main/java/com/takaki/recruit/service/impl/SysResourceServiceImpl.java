@@ -9,6 +9,7 @@ import com.takaki.recruit.exception.BusinessBaseException;
 import com.takaki.recruit.mapper.SysResourceMapper;
 import com.takaki.recruit.service.SysResourceService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.takaki.recruit.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
