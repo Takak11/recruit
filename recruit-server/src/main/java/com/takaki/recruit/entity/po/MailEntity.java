@@ -15,7 +15,7 @@ import lombok.EqualsAndHashCode;
 @TableName("t_mail_code")
 @EqualsAndHashCode(callSuper = true)
 public class MailEntity extends BaseEntity {
-    @TableId(value = "id",type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
     private String code;
     private String email;

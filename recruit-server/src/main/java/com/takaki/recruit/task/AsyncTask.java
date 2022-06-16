@@ -17,6 +17,6 @@ public class AsyncTask {
 
     public void sendMail(JavaMailSender sender, SimpleMailMessage message) {
         log.info("创建发送邮件任务");
-        sender.send(message);
+//        sender.send(message);
     }
 }

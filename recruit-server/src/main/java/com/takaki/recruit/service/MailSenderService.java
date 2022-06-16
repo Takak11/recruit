@@ -1,6 +1,8 @@
 package com.takaki.recruit.service;
 
 import com.takaki.recruit.entity.dto.mail.MailReceiver;
+import com.takaki.recruit.entity.dto.mail.MailVerification;
+import com.takaki.recruit.exception.BusinessBaseException;
 
 import java.util.concurrent.ExecutionException;
 
@@ -15,5 +17,5 @@ public interface MailSenderService {
      * @param receiver 邮件接收者
      * @return 验证码
      */
-    String sendCode(MailReceiver receiver) throws ExecutionException, InterruptedException;
+    String sendCode(MailReceiver receiver);
 }

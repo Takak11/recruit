@@ -23,6 +23,4 @@ public class UserTransfer {
     private Integer age;
     @NotNull(message = "性别为空")
     private Integer sex;
-//    @NotBlank(message = "avatar为空")
-//    private String avatar;
 }

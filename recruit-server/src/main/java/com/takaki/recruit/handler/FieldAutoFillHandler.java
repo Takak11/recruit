@@ -21,9 +21,12 @@ public class FieldAutoFillHandler implements MetaObjectHandler {
         log.info("调用字段INSERT填充");
         this.strictInsertFill(metaObject, "createTime", Date::new, Date.class);
         this.strictInsertFill(metaObject, "updateTime", Date::new, Date.class);
-        String token = SecurityUtils.getSubject().getPrincipal().toString();
+        Object principal = SecurityUtils.getSubject().getPrincipal();
 
-        if (null != token) {
+
+        if (null != principal) {
+
+            String token = principal.toString();
             this.strictInsertFill(
                     metaObject,
                     "createdBy",
@@ -44,9 +47,11 @@ public class FieldAutoFillHandler implements MetaObjectHandler {
     public void updateFill(MetaObject metaObject) {
         log.info("调用字段UPDATE填充");
         this.strictInsertFill(metaObject, "updateTime", Date::new, Date.class);
-        String token = SecurityUtils.getSubject().getPrincipal().toString();
+        Object principal = SecurityUtils.getSubject().getPrincipal();
 
-        if (null != token) {
+
+        if (null != principal) {
+            String token = principal.toString();
             this.strictInsertFill(
                     metaObject,
                     "updatedBy",

@@ -2,23 +2,20 @@ package com.takaki.recruit.service.impl;
 
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.RandomUtil;
+import com.takaki.recruit.constant.ResponseStateConstant;
 import com.takaki.recruit.entity.dto.mail.MailReceiver;
+import com.takaki.recruit.entity.dto.mail.MailVerification;
 import com.takaki.recruit.entity.po.MailEntity;
-import com.takaki.recruit.entity.vo.UserInfo;
 import com.takaki.recruit.exception.BusinessBaseException;
 import com.takaki.recruit.mapper.MailMapper;
 import com.takaki.recruit.service.MailSenderService;
-import com.takaki.recruit.service.SysUserService;
 import com.takaki.recruit.task.AsyncTask;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.scheduling.annotation.Async;
-import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
 
-import javax.mail.Message;
 import java.util.List;
 import java.util.concurrent.*;
 
@@ -41,8 +38,11 @@ public class MailSenderServiceImpl implements MailSenderService {
     @Autowired
     private AsyncTask task;
 
+    private ConcurrentLinkedQueue<Runnable> taskQueue = new ConcurrentLinkedQueue<>();
+
     @Override
-    public String sendCode(MailReceiver receiver) throws ExecutionException, InterruptedException {
+    public String sendCode(MailReceiver receiver) {
+
 
         String to = receiver.getMail();
         SimpleMailMessage message = new SimpleMailMessage();
@@ -54,7 +54,7 @@ public class MailSenderServiceImpl implements MailSenderService {
         String code = RandomUtil.randomString(6);
         message.setText("您的验证码为：" + code + "\n" + "验证码30分钟内有效，请不要泄露给他人");
 
-        task.sendMail(mailSender, message);
+        this.taskQueue.add( () -> task.sendMail(mailSender, message));
 
         return this.insertIntoTable(receiver.getMail(), code) ? code : null;
     }
@@ -67,6 +67,7 @@ public class MailSenderServiceImpl implements MailSenderService {
             MailEntity mailEntity = list.get(0);
             mailEntity.setCode(code);
             mailMapper.updateById(mailEntity);
+            this.taskQueue.poll().run();
 
             return true;
         }
@@ -80,6 +81,7 @@ public class MailSenderServiceImpl implements MailSenderService {
         mailEntity.setCode(code);
 
         mailMapper.insert(mailEntity);
+        this.taskQueue.poll().run();
         return true;
     }
 }

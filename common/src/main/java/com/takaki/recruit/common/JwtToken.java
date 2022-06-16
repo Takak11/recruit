@@ -1,5 +1,8 @@
 package com.takaki.recruit.common;
 
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.algorithms.Algorithm;
+import com.takaki.recruit.constant.JwtConstant;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
