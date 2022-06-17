@@ -8,15 +8,13 @@ import javax.validation.constraints.NotBlank;
 
 /**
  * @author Takaki
- * @date 2022/6/13
+ * @date 2022/6/17
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class UserRegister extends MailVerifier {
-    @NotBlank(message = "手机号不能为空")
-    private String mobile;
-    @NotBlank(message = "昵称不能为空")
-    private String name;
-    @NotBlank(message = "密码不能为空")
+public class ResetPassword extends MailVerifier {
+    @NotBlank(message = "用户名不能为空")
+    private String username;
+    @NotBlank(message = "新密码不能为空")
     private String password;
 }

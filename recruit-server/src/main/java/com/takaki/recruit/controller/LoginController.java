@@ -2,6 +2,8 @@ package com.takaki.recruit.controller;
 
 import cn.hutool.core.map.MapUtil;
 import com.takaki.recruit.constant.RestResponse;
+import com.takaki.recruit.entity.dto.mail.MailVerifier;
+import com.takaki.recruit.entity.dto.user.ResetPassword;
 import com.takaki.recruit.entity.dto.user.UserLogin;
 import com.takaki.recruit.exception.BusinessBaseException;
 import com.takaki.recruit.service.LoginService;
@@ -37,10 +39,25 @@ public class LoginController {
         return RestResponse.success(MapUtil.of("token", token));
     }
 
+    @ApiOperation("邮箱方式登录")
+    @PostMapping("/login/mail")
+    public RestResponse loginWithMail(@RequestBody @Validated MailVerifier verifier) throws BusinessBaseException {
+        String token = loginService.userLoginWithMail(verifier);
+
+        return RestResponse.success(MapUtil.of("token", token));
+    }
+
     @PostMapping("/logout")
     @ApiOperation("从服务端注销账号")
     public void logout() {
         log.info("调用注销接口");
         SecurityUtils.getSubject().logout();
+    }
+
+    @PostMapping("/reset")
+    @ApiOperation("重置密码")
+    public RestResponse resetPassword(@RequestBody @Validated ResetPassword bean) throws BusinessBaseException {
+
+        return RestResponse.success(MapUtil.of("password", loginService.resetPassword(bean)));
     }
 }

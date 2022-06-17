@@ -52,7 +52,7 @@ public class SysUserController {
 
     @ApiOperation("用户注册接口")
     @PostMapping("/register")
-    public RestResponse userRegister(@RequestBody @Validated UserRegister info) {
+    public RestResponse userRegister(@RequestBody @Validated UserRegister info) throws BusinessBaseException {
 
         String username = userService.register(info);
         return null == username

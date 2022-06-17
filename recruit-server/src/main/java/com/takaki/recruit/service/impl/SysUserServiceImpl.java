@@ -3,19 +3,21 @@ package com.takaki.recruit.service.impl;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
 import cn.hutool.core.date.DateUtil;
-import cn.hutool.core.lang.Assert;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.crypto.digest.BCrypt;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.takaki.recruit.constant.ResponseStateConstant;
 import com.takaki.recruit.constant.ResponseStateEnum;
 import com.takaki.recruit.entity.dto.user.UserPassword;
 import com.takaki.recruit.entity.dto.user.UserRegister;
 import com.takaki.recruit.entity.dto.user.UserTransfer;
+import com.takaki.recruit.entity.po.MailEntity;
 import com.takaki.recruit.entity.po.SysResourceEntity;
 import com.takaki.recruit.entity.po.SysUserEntity;
 import com.takaki.recruit.entity.vo.UserInfo;
 import com.takaki.recruit.exception.BusinessBaseException;
+import com.takaki.recruit.mapper.MailMapper;
 import com.takaki.recruit.mapper.SysUserMapper;
 import com.takaki.recruit.service.SysResourceService;
 import com.takaki.recruit.service.SysUserService;
@@ -46,6 +48,8 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
 
     @Autowired
     private SysUserMapper userMapper;
+    @Autowired
+    private MailMapper mailMapper;
     @Autowired
     private SysResourceService resourceService;
 
@@ -128,7 +132,22 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
     }
 
     @Override
-    public String register(UserRegister info) {
+    public String register(UserRegister info) throws BusinessBaseException {
+
+        List<SysUserEntity> userList = userMapper.selectByMap(MapUtil.of("mail", info.getMail()));
+        if (userList.size() != 0) {
+            throw new BusinessBaseException(ResponseStateConstant.ERROR_CODE, "邮箱号已被注册");
+        }
+
+        List<MailEntity> mailEntities = mailMapper.selectList(
+                new QueryWrapper<MailEntity>()
+                        .eq("email", info.getMail())
+                        .eq("code", info.getSms())
+        );
+        if (mailEntities.size() != 1) {
+            throw new BusinessBaseException(ResponseStateConstant.ERROR_CODE, "验证码错误");
+        }
+
         String username;
         while (true) {
             username = RandomUtil.randomNumbers(10);

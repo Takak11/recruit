@@ -48,15 +48,16 @@ public class ShiroConfig {
 
         HashMap<String, String> rules = new HashMap<>(16);
         rules.put("/api/recruit/login", "anon");
+        rules.put("/api/recruit/login/mail", "anon");
+        rules.put("/api/recruit/reset", "anon");
+        rules.put("/api/recruit/common/**", "anon");
         rules.put("/api/recruit/logout", "anon");
         rules.put("/api/recruit/user/register", "anon");
         rules.put("/swagger-resources/**", "anon");
         rules.put("/webjars/**", "anon");
         rules.put("/v2/**", "anon");
         rules.put("/swagger-ui.html/**", "anon");
-        rules.put("/api/recruit/common/sms", "anon");
         rules.put("/doc.html/**", "anon");
-        rules.put("/api/recruit/common/rest/download/**", "anon");
 
         rules.put("/**", "loginFilter");
 

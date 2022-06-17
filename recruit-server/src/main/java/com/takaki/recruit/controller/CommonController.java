@@ -5,7 +5,6 @@ import cn.hutool.core.map.MapUtil;
 import com.takaki.recruit.constant.ResponseStateConstant;
 import com.takaki.recruit.constant.RestResponse;
 import com.takaki.recruit.entity.dto.mail.MailReceiver;
-import com.takaki.recruit.entity.dto.mail.MailVerification;
 import com.takaki.recruit.entity.dto.resource.FileIdTransfer;
 import com.takaki.recruit.exception.BusinessBaseException;
 import com.takaki.recruit.service.MailSenderService;

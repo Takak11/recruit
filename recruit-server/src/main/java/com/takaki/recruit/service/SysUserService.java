@@ -55,8 +55,9 @@ public interface SysUserService extends IService<SysUserEntity> {
      * 用户注册方法，成功时返回获得的账号
      * @param info
      * @return
+     * @throws BusinessBaseException 邮箱号重复时
      */
-    String register(UserRegister info);
+    String register(UserRegister info) throws BusinessBaseException;
 
     /**
      * 上传用户头像

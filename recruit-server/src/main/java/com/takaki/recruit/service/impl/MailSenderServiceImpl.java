@@ -4,7 +4,6 @@ import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.RandomUtil;
 import com.takaki.recruit.constant.ResponseStateConstant;
 import com.takaki.recruit.entity.dto.mail.MailReceiver;
-import com.takaki.recruit.entity.dto.mail.MailVerification;
 import com.takaki.recruit.entity.po.MailEntity;
 import com.takaki.recruit.exception.BusinessBaseException;
 import com.takaki.recruit.mapper.MailMapper;
@@ -81,7 +80,7 @@ public class MailSenderServiceImpl implements MailSenderService {
         mailEntity.setCode(code);
 
         mailMapper.insert(mailEntity);
-        this.taskQueue.poll().run();
+//        this.taskQueue.poll().run();
         return true;
     }
 }

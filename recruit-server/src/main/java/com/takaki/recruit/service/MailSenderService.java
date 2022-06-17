@@ -1,10 +1,6 @@
 package com.takaki.recruit.service;
 
 import com.takaki.recruit.entity.dto.mail.MailReceiver;
-import com.takaki.recruit.entity.dto.mail.MailVerification;
-import com.takaki.recruit.exception.BusinessBaseException;
-
-import java.util.concurrent.ExecutionException;
 
 /**
  * @author Takaki
