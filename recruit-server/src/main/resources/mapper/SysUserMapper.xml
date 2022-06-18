@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.takaki.recruit.mapper.SysUserMapper">
-
-    <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.takaki.recruit.entity.po.SysUserEntity">
-        <id column="id" property="id" />
-        <result column="create_time" property="createTime" />
-        <result column="update_time" property="updateTime" />
-        <result column="created_by" property="createdBy" />
-        <result column="updated_by" property="updatedBy" />
-        <result column="name" property="name" />
-        <result column="mobile" property="mobile" />
-        <result column="avatar" property="avatar" />
-        <result column="password" property="password" />
-        <result column="mail" property="mail" />
-        <result column="age" property="age" />
-        <result column="is_deleted" property="deleted" />
+    <resultMap id="UserInfoMap" type="com.takaki.recruit.entity.vo.UserPageInfo">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="name" property="name"/>
+        <result column="avatar" property="avatar"/>
+        <result column="mail" property="mail"/>
+        <result column="age" property="age"/>
+        <result column="mobile" property="mobile"/>
+        <result column="sex" property="sex"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
     </resultMap>
 
-    <!-- 通用查询结果列 -->
-    <sql id="Base_Column_List">
-        create_time,
-        update_time,
-        created_by,
-        updated_by,
-        id, name, mobile, avatar, password, mail, age, is_deleted
-    </sql>
-
+    <select id="getUserPage" resultMap="UserInfoMap" parameterType="com.takaki.recruit.entity.dto.user.UserListPage">
+        select *
+        from t_sys_user as user
+        where user.is_deleted = 0
+        <if test="additionalProps.username != null and additionalProps.username != ''">
+            and user.username = #{additionalProps.username}
+        </if>
+        <if test="additionalProps.name != null and additionalProps.name != ''">
+            and user.name = #{additionalProps.name}
+        </if>
+    </select>
 </mapper>

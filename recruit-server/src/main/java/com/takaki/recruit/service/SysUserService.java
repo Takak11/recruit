@@ -1,15 +1,18 @@
 package com.takaki.recruit.service;
 
-import com.takaki.recruit.entity.dto.user.UserPassword;
-import com.takaki.recruit.entity.dto.user.UserRegister;
-import com.takaki.recruit.entity.dto.user.UserTransfer;
+import com.takaki.recruit.common.BasePageReturnType;
+import com.takaki.recruit.common.TransferPage;
+import com.takaki.recruit.entity.dto.user.*;
 import com.takaki.recruit.entity.po.SysUserEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.takaki.recruit.entity.vo.UserEdit;
 import com.takaki.recruit.entity.vo.UserInfo;
+import com.takaki.recruit.entity.vo.UserPageInfo;
 import com.takaki.recruit.exception.BusinessBaseException;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * <p>
@@ -67,4 +70,29 @@ public interface SysUserService extends IService<SysUserEntity> {
      * @throws BusinessBaseException 无此用户
      */
     String updateUserAvatar(MultipartFile file) throws IOException, BusinessBaseException;
+
+    /**
+     *
+     * 获取用户列表
+     * @param page
+     * @return
+     */
+    BasePageReturnType<UserPageInfo> getUserList(UserListPage page);
+
+    /**
+     * 删除用户
+     * @param id
+     * @return
+     */
+    Boolean deleteUser(UserId id);
+
+    /**
+     * 更新用户信息
+     * @param edit
+     * @return
+     * @throws BusinessBaseException
+     */
+    Boolean editUser(UserEdit edit) throws BusinessBaseException;
+
+    String addUser(UserAdd user);
 }

@@ -39,14 +39,14 @@ public class SysResourceServiceImpl extends ServiceImpl<SysResourceMapper, SysRe
     public Integer fileUpload(MultipartFile file) throws IOException {
 
         String dirPath = filePath
-                + File.separator
+                + '/'
                 + file.getContentType();
         File dir = new File(dirPath);
         if (!dir.exists()) {
             dir.mkdirs();
         }
 
-        String path = dirPath + File.separator
+        String path = dirPath + '/'
                         + UUID.fastUUID().toString()
                         + file.getOriginalFilename();
 

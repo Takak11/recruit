@@ -7,15 +7,19 @@ import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.crypto.digest.BCrypt;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.takaki.recruit.common.BasePageReturnType;
+import com.takaki.recruit.common.TransferPage;
 import com.takaki.recruit.constant.ResponseStateConstant;
 import com.takaki.recruit.constant.ResponseStateEnum;
-import com.takaki.recruit.entity.dto.user.UserPassword;
-import com.takaki.recruit.entity.dto.user.UserRegister;
-import com.takaki.recruit.entity.dto.user.UserTransfer;
+import com.takaki.recruit.entity.dto.user.*;
 import com.takaki.recruit.entity.po.MailEntity;
 import com.takaki.recruit.entity.po.SysResourceEntity;
 import com.takaki.recruit.entity.po.SysUserEntity;
+import com.takaki.recruit.entity.vo.UserEdit;
 import com.takaki.recruit.entity.vo.UserInfo;
+import com.takaki.recruit.entity.vo.UserPageInfo;
 import com.takaki.recruit.exception.BusinessBaseException;
 import com.takaki.recruit.mapper.MailMapper;
 import com.takaki.recruit.mapper.SysUserMapper;
@@ -28,6 +32,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.ObjectUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -131,6 +137,23 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
         return true;
     }
 
+    private String getUsername() {
+        String username;
+        while (true) {
+            username = RandomUtil.randomNumbers(10);
+            List<SysUserEntity> entity = userMapper.selectByMap(MapUtil.of("username", username));
+            if (entity.size() == 0) {
+                break;
+            }
+        }
+        return username;
+    }
+    private void encryptPassword(String rawPassword, SysUserEntity entity) {
+        String password = BCrypt.hashpw(rawPassword);
+
+        entity.setPassword(password);
+    }
+
     @Override
     public String register(UserRegister info) throws BusinessBaseException {
 
@@ -148,25 +171,18 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
             throw new BusinessBaseException(ResponseStateConstant.ERROR_CODE, "验证码错误");
         }
 
-        String username;
-        while (true) {
-            username = RandomUtil.randomNumbers(10);
-            List<SysUserEntity> entity = userMapper.selectByMap(MapUtil.of("username", username));
-            if (entity.size() == 0) {
-                break;
-            }
-        }
-
         SysUserEntity userEntity = new SysUserEntity();
-        info.setPassword(BCrypt.hashpw(info.getPassword()));
         BeanUtil.copyProperties(info, userEntity, true);
-        userEntity.setUsername(username);
 
+        this.encryptPassword(info.getPassword(), userEntity);
+        String username = this.getUsername();
+        userEntity.setUsername(username);
         userMapper.insert(userEntity);
         return username;
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public String updateUserAvatar(MultipartFile file) throws IOException, BusinessBaseException {
 
         Integer id = resourceService.fileUpload(file);
@@ -186,5 +202,61 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
         return null;
     }
 
+    @Override
+    public BasePageReturnType<UserPageInfo> getUserList(UserListPage page) {
+
+        IPage<UserPageInfo> userPage = userMapper.getUserPage(
+                new Page<>(
+                        page.getPageNo(),
+                        page.getPageSize()
+                )
+                ,page
+        );
+
+        BasePageReturnType<UserPageInfo> returnType = new BasePageReturnType<>();
+        returnType.setTotal(userPage.getTotal());
+        returnType.setRecords(userPage.getRecords());
+
+        return returnType;
+    }
+
+    @Override
+    public Boolean deleteUser(UserId id) {
+        int affectedLines = userMapper.deleteById(id.getId());
+
+        return affectedLines != 0;
+    }
+
+    @Override
+    public Boolean editUser(UserEdit edit) throws BusinessBaseException {
+
+        String username = edit.getUsername();
+        List<SysUserEntity> entityList = userMapper.selectByMap(MapUtil.of("username", username));
+        if (entityList.size() != 1) {
+            throw new BusinessBaseException(ResponseStateConstant.ERROR_CODE, "用户不存在");
+        }
+
+        SysUserEntity entity = entityList.get(0);
+
+        BeanUtil.copyProperties(edit, entity);
+        userMapper.updateById(entity);
+
+        return true;
+    }
+
+    @Override
+    public String addUser(UserAdd user) {
+
+        SysUserEntity entity = new SysUserEntity();
+        BeanUtil.copyProperties(user, entity);
+
+        String username = this.getUsername();
+        entity.setUsername(username);
+        this.encryptPassword(user.getPassword(), entity);
+
+        userMapper.insert(entity);
+
+        return username;
+    }
 
 }

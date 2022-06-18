@@ -53,7 +53,7 @@ public class GlobalExceptionHandler {
         List<String> errors = e.getBindingResult()
                 .getAllErrors()
                 .stream()
-                .map(error -> (DefaultMessageSourceResolvable) error)
+                .map(error -> (DefaultMessageSourceResolvable) (error))
                 .map(DefaultMessageSourceResolvable::getDefaultMessage)
                 .collect(Collectors.toList());
 

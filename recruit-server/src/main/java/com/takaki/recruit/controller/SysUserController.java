@@ -1,12 +1,15 @@
 package com.takaki.recruit.controller;
 
+import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.map.MapUtil;
+import com.takaki.recruit.common.TransferPage;
 import com.takaki.recruit.constant.ResponseStateConstant;
 import com.takaki.recruit.constant.ResponseStateEnum;
 import com.takaki.recruit.constant.RestResponse;
-import com.takaki.recruit.entity.dto.user.UserPassword;
-import com.takaki.recruit.entity.dto.user.UserRegister;
-import com.takaki.recruit.entity.dto.user.UserTransfer;
+import com.takaki.recruit.entity.dto.user.*;
+import com.takaki.recruit.entity.po.SysUserEntity;
+import com.takaki.recruit.entity.vo.UserDetail;
+import com.takaki.recruit.entity.vo.UserEdit;
 import com.takaki.recruit.exception.BusinessBaseException;
 import com.takaki.recruit.service.SysUserService;
 import io.swagger.annotations.Api;
@@ -83,5 +86,49 @@ public class SysUserController {
         return null == path
                 ? RestResponse.fail(ResponseStateConstant.ERROR_CODE, "上传头像失败")
                 : RestResponse.success(MapUtil.of("src", path));
+    }
+
+    @ApiOperation("用户列表")
+    @PostMapping("/list")
+    public RestResponse userList(@RequestBody @Validated UserListPage page) {
+
+        return RestResponse.success(userService.getUserList(page));
+    }
+
+    @ApiOperation("根据ID查询用户")
+    @PostMapping("/detail")
+    public RestResponse userDetail(@RequestBody @Validated UserId id) {
+        System.out.println(id);
+        UserDetail userDetail = new UserDetail();
+        SysUserEntity entity = userService.getById(id.getId());
+        if (entity != null) {
+            BeanUtil.copyProperties(entity, userDetail);
+            return RestResponse.success(userDetail);
+        }
+
+        return RestResponse.fail(ResponseStateConstant.ERROR_CODE, "服务器内部错误");
+    }
+
+    @ApiOperation("删除用户")
+    @PostMapping("/delete")
+    public RestResponse userDelete(@RequestBody @Validated UserId id) {
+
+        boolean result = userService.deleteUser(id);
+
+        return RestResponse.success(MapUtil.of("result", result));
+    }
+
+    @ApiOperation("编辑用户")
+    @PostMapping("/edit")
+    public RestResponse userEdit(@RequestBody @Validated UserEdit edit) throws BusinessBaseException {
+        boolean result = userService.editUser(edit);
+        return RestResponse.success(MapUtil.of("result", result));
+    }
+
+    @ApiOperation("增加用户")
+    @PostMapping("/add")
+    public RestResponse userAdd(@RequestBody @Validated UserAdd user) {
+        String username = userService.addUser(user);
+        return RestResponse.success(MapUtil.of("username", username));
     }
 }
