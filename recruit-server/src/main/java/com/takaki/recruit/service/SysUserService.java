@@ -24,6 +24,13 @@ import java.util.List;
  */
 public interface SysUserService extends IService<SysUserEntity> {
 
+
+    /**
+     * 查询当前系统登录用户
+     * @throws BusinessBaseException
+     * @return
+     */
+    SysUserEntity getUserEntity() throws BusinessBaseException;
     /**
      * 获取环境中的Token并获取其用户名，根据用户名查询用户获取信息
      * @return 用户信息

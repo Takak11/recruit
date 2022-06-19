@@ -80,7 +80,7 @@ public class MailSenderServiceImpl implements MailSenderService {
         mailEntity.setCode(code);
 
         mailMapper.insert(mailEntity);
-//        this.taskQueue.poll().run();
+        this.taskQueue.poll().run();
         return true;
     }
 }

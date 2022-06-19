@@ -59,7 +59,8 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
     @Autowired
     private SysResourceService resourceService;
 
-    private SysUserEntity getUserEntity() throws BusinessBaseException {
+    @Override
+    public SysUserEntity getUserEntity() throws BusinessBaseException {
 
         String token = SecurityUtils.getSubject().getPrincipal().toString();
         String username = JwtUtil.getUsernameFromToken(token);

@@ -8,11 +8,14 @@ import com.takaki.recruit.entity.dto.mail.MailReceiver;
 import com.takaki.recruit.entity.dto.resource.FileIdTransfer;
 import com.takaki.recruit.exception.BusinessBaseException;
 import com.takaki.recruit.service.MailSenderService;
+import com.takaki.recruit.service.ResumeService;
 import com.takaki.recruit.service.SysResourceService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.util.ObjectUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -21,7 +24,6 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.concurrent.ExecutionException;
 
 /**
  * @author Takaki
@@ -37,6 +39,23 @@ public class CommonController {
     private SysResourceService resourceService;
     @Autowired
     private MailSenderService mailSenderService;
+    @Autowired
+    private ResumeService resumeService;
+
+    @Value("${common.default-resume}")
+    private Integer defaultResume;
+
+    @ApiOperation("获取用户简历")
+    @GetMapping("/resume/{id}")
+    public void getUserResume(@PathVariable("id") Integer id, HttpServletResponse response) throws BusinessBaseException, IOException {
+        Integer resumeId = resumeService.getResumeId(id);
+
+        if (!ObjectUtils.isEmpty(resumeId)) {
+            this.download(resumeId, response);
+        } else {
+            this.download(defaultResume, response);
+        }
+    }
 
     @ApiOperation("上传文件到服务器")
     @PostMapping("/upload")

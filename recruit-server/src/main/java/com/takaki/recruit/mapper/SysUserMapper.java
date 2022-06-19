@@ -21,6 +21,7 @@ public interface SysUserMapper extends BaseMapper<SysUserEntity> {
     /**
      * 用户列表分页查询
      * @param page
+     * @param additionalProps
      * @return
      */
     IPage<UserPageInfo> getUserPage(IPage<UserPageInfo> page, @Param("additionalProps") UserListPage additionalProps);

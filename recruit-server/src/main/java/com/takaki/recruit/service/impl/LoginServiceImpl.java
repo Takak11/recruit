@@ -1,5 +1,6 @@
 package com.takaki.recruit.service.impl;
 
+import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.crypto.digest.BCrypt;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -60,6 +61,17 @@ public class LoginServiceImpl implements LoginService {
         }
     }
 
+    private void verifyCode(String mail, String code) throws BusinessBaseException {
+        List<MailEntity> mailEntities = mailMapper.selectList(
+                new QueryWrapper<MailEntity>()
+                        .eq("email", mail)
+                        .eq("code", code)
+        );
+        if (mailEntities.size() != 1) {
+            throw new BusinessBaseException(ResponseStateConstant.ERROR_CODE, "验证码错误");
+        }
+    }
+
     @Override
     public String userLoginWithMail(MailVerifier verifier) throws BusinessBaseException {
 
@@ -68,7 +80,6 @@ public class LoginServiceImpl implements LoginService {
             entity = userService.getOne(
                     new QueryWrapper<SysUserEntity>()
                             .eq("mail", verifier.getMail())
-                            .eq("sms", verifier.getSms())
             );
 
             if (ObjectUtil.isNull(entity)) {
@@ -78,6 +89,8 @@ public class LoginServiceImpl implements LoginService {
         } catch (Exception e) {
             throw new BusinessBaseException(ResponseStateConstant.ERROR_CODE, "该邮箱未注册或内部错误");
         }
+
+        this.verifyCode(verifier.getMail(), verifier.getSms());
         UserLogin userLogin = new UserLogin();
         userLogin.setUsername(entity.getUsername());
 
@@ -102,14 +115,7 @@ public class LoginServiceImpl implements LoginService {
         }
         SysUserEntity entity = userEntities.get(0);
 
-        List<MailEntity> mailEntities = mailMapper.selectList(
-                new QueryWrapper<MailEntity>()
-                        .eq("email", bean.getMail())
-                        .eq("code", bean.getSms())
-        );
-        if (mailEntities.size() != 1) {
-            throw new BusinessBaseException(ResponseStateConstant.ERROR_CODE, "验证码错误");
-        }
+        this.verifyCode(bean.getMail(), bean.getSms());
 
         String password = BCrypt.hashpw(bean.getPassword());
         entity.setPassword(password);
